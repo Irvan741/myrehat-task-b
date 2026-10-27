@@ -1,0 +1,26 @@
+{
+	"name": "@myrehat-task-b/api",
+	"exports": {
+		".": {
+			"default": "./src/index.ts"
+		},
+		"./routers/*": {
+			"default": "./src/routers/*.ts"
+		},
+		"./context": {
+			"default": "./src/context.ts"
+		}
+	},
+	"type": "module",
+	"scripts": {},
+	"devDependencies": {
+		"@myrehat-task-b/config": "workspace:*"
+	},
+	"dependencies": {
+		"@orpc/server": "^1.9.0",
+		"@myrehat-task-b/auth": "workspace:*",
+		"@myrehat-task-b/db": "workspace:*",
+		"drizzle-orm": "^0.44.2",
+		"nanoid": "^5.1.5"
+	}
+}
